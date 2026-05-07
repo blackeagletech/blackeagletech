@@ -1,0 +1,33 @@
+/* ===== SOCIALS PRO ===== */
+.social-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.02);
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.social-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.social-item:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  box-shadow: 0 0 12px rgba(0, 255, 224, 0.4);
+  transform: translateY(-2px);
+}

@@ -1,0 +1,129 @@
+{
+  "nav": {
+    "services": "Services",
+    "demos": "Demos",
+    "contact": "Contact",
+    "whatsapp": "WhatsApp Chat"
+  },
+  "services": {
+    "title": "Services",
+    "web": {
+      "title": "Web Development",
+      "desc": "Modern, fast landing pages optimized for conversion.",
+      "features": [
+        "Responsive design",
+        "SEO optimized",
+        "High performance"
+      ]
+    },
+    "ecommerce": {
+      "title": "E-commerce",
+      "desc": "Online stores ready to sell from day one.",
+      "features": [
+        "Payment integrations",
+        "Product management",
+        "Sales optimization"
+      ]
+    },
+    "support": {
+      "title": "Technical Support",
+      "desc": "Remote assistance to optimize and maintain your system.",
+      "features": [
+        "System cleanup",
+        "Software installation",
+        "Performance optimization"
+      ]
+    },
+    "cta": "Request service",
+    "popular": "Top pick"
+  },
+  "demos": {
+  "title": "Projects",
+  "view": "View demo",
+  "landing": {
+    "title": "Business Website",
+    "desc": "Modern landing page optimized for conversion"
+  },
+  "portfolio": {
+    "title": "Personal Portfolio",
+    "desc": "Professional personal website"
+  },
+  "ecommerce": {
+    "title": "Online Store",
+    "desc": "Full e-commerce ready to sell"
+  }
+},
+  "process": {
+  "title": "Workflow",
+  "step1": {
+    "title": "Contact",
+    "desc": "We discuss your idea, goals and project needs."
+  },
+  "step2": {
+    "title": "Planning",
+    "desc": "We define structure, design and strategy."
+  },
+  "step3": {
+    "title": "Development",
+    "desc": "I build your site focused on performance and conversion."
+  },
+  "step4": {
+    "title": "Delivery",
+    "desc": "Launch, final tweaks and initial support included."
+  }
+},
+  "simulator": {
+    "title": "Project Simulator",
+    "summary": "Summary",
+
+    "steps": {
+      "type": "Project Type",
+      "goal": "Goal",
+      "pages": "Pages",
+      "design": "Design",
+      "features": "Features"
+    },
+
+    "options": {
+      "landing": "Landing Page",
+      "web": "Website",
+      "ecommerce": "E-commerce",
+
+      "leads": "Lead Generation",
+      "portfolio": "Portfolio",
+      "sales": "Sales",
+
+      "small": "1–3 pages",
+      "medium": "4–7 pages",
+      "large": "8+ pages",
+
+      "template": "Template",
+      "custom": "Custom Design",
+
+      "auth": "User System",
+      "payments": "Payments"
+    }
+  },
+  "hero": {
+    "badge": "Web Development & Tech Support",
+    "title": "We build websites that turn visitors into clients",
+    "subtitle": "Landing pages, ecommerce and remote assistance to grow your business effortlessly",
+    "cta": "Get a quote",
+    "cta2": "View demos"
+  },
+  "contact": {
+    "title": "Ready to start?",
+    "subtitle": "Your business needs a professional online presence",
+    "btn": "Chat on WhatsApp",
+    "whatsappMessage": "Hi! I'm interested in your services",
+    "socialTitle": "Also find me on",
+    "social": {
+      "github": "GitHub",
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "threads": "Threads",
+      "discord": "Discord",
+      "telegram": "Telegram"
+    }
+  }
+}

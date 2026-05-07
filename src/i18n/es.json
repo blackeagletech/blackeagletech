@@ -1,0 +1,129 @@
+{
+  "nav": {
+    "services": "Servicios",
+    "demos": "Demos",
+    "contact": "Contacto",
+    "whatsapp": "WhatsApp"
+  },
+  "services": {
+    "title": "Servicios",
+    "web": {
+      "title": "Sitios Web",
+      "desc": "Landing pages modernas, rápidas y optimizadas para convertir.",
+      "features": [
+        "Diseño responsive",
+        "SEO optimizado",
+        "Alta performance"
+      ]
+    },
+    "ecommerce": {
+      "title": "E-commerce",
+      "desc": "Tiendas online listas para vender desde el día uno.",
+      "features": [
+        "Pasarelas de pago",
+        "Gestión de productos",
+        "Optimización de ventas"
+      ]
+    },
+    "support": {
+      "title": "Soporte Técnico",
+      "desc": "Asistencia remota para optimizar y mantener tu equipo.",
+      "features": [
+        "Limpieza de sistema",
+        "Instalación de software",
+        "Optimización general"
+      ]
+    },
+    "cta": "Solicitar servicio",
+    "popular": "Más elegido"
+  },
+  "demos": {
+  "title": "Proyectos",
+  "view": "Ver demo",
+  "landing": {
+    "title": "Sitio Empresarial",
+    "desc": "Landing moderna optimizada para conversión"
+  },
+  "portfolio": {
+    "title": "Portfolio Personal",
+    "desc": "Sitio personal con diseño profesional"
+  },
+  "ecommerce": {
+    "title": "Tienda Online",
+    "desc": "E-commerce completo listo para vender"
+  }
+},
+  "process": {
+  "title": "Proceso de trabajo",
+  "step1": {
+    "title": "Contacto",
+    "desc": "Hablamos sobre tu idea, objetivos y lo que necesitas lograr."
+  },
+  "step2": {
+    "title": "Planificación",
+    "desc": "Definimos estructura, diseño y estrategia para tu proyecto."
+  },
+  "step3": {
+    "title": "Desarrollo",
+    "desc": "Construyo tu sitio con foco en rendimiento, diseño y conversión."
+  },
+  "step4": {
+    "title": "Entrega",
+    "desc": "Publicación, ajustes finales y soporte inicial incluido."
+  }
+},
+  "simulator": {
+    "title": "Simulador de presupuesto",
+    "summary": "Resumen",
+
+    "steps": {
+      "type": "Tipo de proyecto",
+      "goal": "Objetivo",
+      "pages": "Páginas",
+      "design": "Diseño",
+      "features": "Funciones"
+    },
+
+    "options": {
+      "landing": "Landing Page",
+      "web": "Sitio Web",
+      "ecommerce": "E-commerce",
+
+      "leads": "Generación de clientes",
+      "portfolio": "Portfolio",
+      "sales": "Ventas",
+
+      "small": "1–3 páginas",
+      "medium": "4–7 páginas",
+      "large": "8+ páginas",
+
+      "template": "Plantilla",
+      "custom": "Diseño personalizado",
+
+      "auth": "Sistema de usuarios",
+      "payments": "Pagos"
+    }
+  },
+  "hero": {
+    "badge": "Desarrollo Web & Soporte Técnico",
+    "title": "Creamos sitios web que convierten visitas en clientes",
+    "subtitle": "Landing pages, ecommerce y asistencia remota para que tu negocio crezca sin complicaciones",
+    "cta": "Solicitar presupuesto",
+    "cta2": "Ver demos"
+  },
+  "contact": {
+    "title": "¿Listo para empezar?",
+    "subtitle": "Tu negocio necesita presencia online profesional",
+    "btn": "Hablar por WhatsApp",
+    "whatsappMessage": "Hola! Quiero información sobre tus servicios",
+    "socialTitle": "También podés encontrarme en",
+    "social": {
+      "github": "GitHub",
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "threads": "Threads",
+      "discord": "Discord",
+      "telegram": "Telegram"
+    }
+  }
+}
