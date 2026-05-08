@@ -4,7 +4,7 @@ import { socials } from "@/data/socials"
 
 const { t } = useI18n()
 
-const whatsappLink = `https://wa.me/549630170?text=${encodeURIComponent(
+const whatsappLink = `https://wa.me/5493471630170?text=${encodeURIComponent(
   t("contact.whatsappMessage")
 )}`
 </script>

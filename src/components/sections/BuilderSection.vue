@@ -295,7 +295,7 @@ Extras: ${(form.value.features || []).join(", ")}
 
 Total: ${currencySymbol.value}${total.value}
 `
-  return `https://wa.me/549630170?text=${encodeURIComponent(msg)}`
+  return `https://wa.me/5493471630170?text=${encodeURIComponent(msg)}`
 })
 
 const progress = computed(() => ((currentStep.value + 1) / steps.length) * 100)

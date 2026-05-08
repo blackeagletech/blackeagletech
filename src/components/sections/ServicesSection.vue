@@ -75,7 +75,7 @@ const getWhatsappLink = (service) => {
   const msg = `Hola! Estoy interesado en el servicio: ${title}.
 ¿Podemos hablar para más detalles?`
 
-  return `https://wa.me/549630170?text=${encodeURIComponent(msg)}`
+  return `https://wa.me/5493471630170?text=${encodeURIComponent(msg)}`
 }
 
 /* 🔥 ANIMACIÓN TIPO SAAS (SCROLL REVEAL) */
