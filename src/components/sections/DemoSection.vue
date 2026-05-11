@@ -1,66 +1,103 @@
 <template>
   <section id="demos" class="demos-section">
 
-    <h2 class="demos-title">
-      {{ t("demos.title") }}
-    </h2>
+    <div class="demos-container">
 
-    <div class="demos-grid">
+      <!-- TITLE -->
+      <h2 class="demos-title">
+        {{ t("demos.title") }}
+      </h2>
 
-      <div
-        v-for="demo in demos"
-        :key="demo.key"
-        class="demo-card"
-        @mousemove="handleMove($event)"
-        @mouseleave="resetTilt($event)"
-        @click="openModal(demo)" 
-      >
+      <!-- GRID -->
+      <div class="demos-grid">
 
-        <img :src="demo.image" class="demo-img" />
+        <div
+          v-for="demo in demos"
+          :key="demo.key"
+          class="demo-card"
+          @mousemove="handleMove($event)"
+          @mouseleave="resetTilt($event)"
+          @click="openModal(demo)"
+        >
 
-        <!-- fake video -->
-        <div class="demo-video"></div>
+          <!-- IMAGE -->
+          <img :src="demo.image" class="demo-img" />
 
-        <div class="demo-overlay">
-          <h3 class="demo-title">
-            {{ t(`demos.${demo.key}.title`) }}
-          </h3>
+          <!-- GLOW -->
+          <div class="demo-video"></div>
 
-          <button class="demo-btn">
-            {{ t("demos.view") }}
-          </button>
+          <!-- OVERLAY -->
+          <div class="demo-overlay">
+
+            <div>
+              <h3 class="demo-title">
+                {{ t(`demos.${demo.key}.title`) }}
+              </h3>
+
+              <p class="demo-desc">
+                {{ t(`demos.${demo.key}.desc`) }}
+              </p>
+            </div>
+
+            <button class="demo-btn">
+              {{ t("demos.view") }}
+            </button>
+
+          </div>
+
         </div>
 
       </div>
 
     </div>
 
-    <!-- ===== MODAL ===== -->
+    <!-- MODAL -->
 
     <transition name="fade">
-      <div v-if="activeDemo" class="demo-modal">
+
+      <div
+        v-if="activeDemo"
+        class="demo-modal"
+        @click.self="closeModal"
+      >
 
         <div class="demo-modal-content">
 
+          <!-- IMAGE -->
           <img
             :src="activeDemo.image"
             class="demo-modal-img"
           />
 
+          <!-- INFO -->
           <div class="demo-modal-info">
 
-            <h3>
-              {{ t(`demos.${activeDemo.key}.title`) }}
-            </h3>
+            <div>
 
-            <p>
-              {{ t(`demos.${activeDemo.key}.desc`) || "Preview del proyecto" }}
-            </p>
+              <span class="demo-badge">
+                LIVE DEMO
+              </span>
 
+              <h3>
+                {{ t(`demos.${activeDemo.key}.title`) }}
+              </h3>
+
+              <p>
+                {{ t(`demos.${activeDemo.key}.desc`) }}
+              </p>
+
+            </div>
+
+            <!-- ACTIONS -->
             <div class="demo-modal-actions">
 
-              <a href="#contact" class="btn">
-                {{ t("services.cta") }}
+              <a
+                :href="activeDemo.url"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+              >
+                {{ t("demos.openDemo") }}
               </a>
 
               <button
@@ -77,6 +114,7 @@
         </div>
 
       </div>
+
     </transition>
 
   </section>
@@ -89,45 +127,50 @@ import { demos } from "@/data/demos"
 
 const { t } = useI18n()
 
-/* ===== MODAL ===== */
+/* MODAL */
 
 const activeDemo = ref(null)
 
 const openModal = (demo) => {
   activeDemo.value = demo
+  document.body.style.overflow = "hidden"
 }
 
 const closeModal = () => {
   activeDemo.value = null
+  document.body.style.overflow = "auto"
 }
 
-/* ===== PARALLAX ===== */
+/* PARALLAX */
 
 const handleMove = (e) => {
+  if (window.innerWidth < 768) return
+
   const card = e.currentTarget
   const rect = card.getBoundingClientRect()
 
   const x = e.clientX - rect.left
   const y = e.clientY - rect.top
 
-  const rotateX = ((y / rect.height) - 0.5) * -10
-  const rotateY = ((x / rect.width) - 0.5) * 10
+  const rotateX = ((y / rect.height) - 0.5) * -8
+  const rotateY = ((x / rect.width) - 0.5) * 8
 
   card.style.transform = `
     perspective(1000px)
     rotateX(${rotateX}deg)
     rotateY(${rotateY}deg)
-    scale(1.03)
+    translateY(-6px)
   `
 }
 
 const resetTilt = (e) => {
   const card = e.currentTarget
+
   card.style.transform = `
     perspective(1000px)
     rotateX(0deg)
     rotateY(0deg)
-    scale(1)
+    translateY(0px)
   `
 }
 </script>

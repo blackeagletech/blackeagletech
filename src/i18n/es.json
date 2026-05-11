@@ -38,19 +38,18 @@
     "popular": "Más elegido"
   },
   "demos": {
-  "title": "Proyectos",
-  "view": "Ver demo",
-  "landing": {
-    "title": "Sitio Empresarial",
-    "desc": "Landing moderna optimizada para conversión"
+  "title": "Demos",
+  "view": "Ver Demo",
+  "openDemo": "Abrir Sitio",
+
+  "saas": {
+    "title": "SaaS Landing Page",
+    "desc": "Landing premium estilo startup/SaaS con diseño moderno, animaciones y enfoque en conversión."
   },
-  "portfolio": {
-    "title": "Portfolio Personal",
-    "desc": "Sitio personal con diseño profesional"
-  },
-  "ecommerce": {
-    "title": "Tienda Online",
-    "desc": "E-commerce completo listo para vender"
+
+  "localbusiness": {
+    "title": "Local Business",
+    "desc": "Sitio profesional para negocios locales con diseño moderno, contacto rápido y presencia digital sólida."
   }
 },
   "process": {

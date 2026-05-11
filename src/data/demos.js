@@ -1,17 +1,13 @@
 export const demos = [
   {
-    key: "landing",
-    image: "/demos/landingpage.png",
-    url: "#"
+    key: "saas",
+    image: "/demos/saas-landing-page.png",
+    url: "https://black-eagle-tech.github.io/saas-landing-page/",
   },
+
   {
-    key: "ecommerce",
-    image: "/demos/ecommerce.png",
-    url: "#"
+    key: "localbusiness",
+    image: "/demos/local-business.png",
+    url: "https://black-eagle-tech.github.io/local-business/",
   },
-  {
-    key: "portfolio",
-    image: "/demos/portfolio.png",
-    url: "#"
-  }
 ]
