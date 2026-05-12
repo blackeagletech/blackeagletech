@@ -38,18 +38,24 @@
     "popular": "Top pick"
   },
   "demos": {
-  "title": "Demos",
-  "view": "View Demo",
-  "openDemo": "Open Website",
+  "title": "Real demos",
+  "view": "View demo",
+  "live": "Open demo",
+  "source": "Request similar",
 
-  "saas": {
+  "landing": {
     "title": "SaaS Landing Page",
-    "desc": "Premium startup/SaaS landing page with modern UI, animations and high-conversion structure."
+    "desc": "Modern conversion-focused landing page with premium animations and startup-level UX."
   },
 
-  "localbusiness": {
+  "localBusiness": {
     "title": "Local Business",
-    "desc": "Professional website for local businesses with modern design and strong digital presence."
+    "desc": "Business website optimized to attract clients and build trust."
+  },
+
+  "portfolio": {
+    "title": "Creative Portfolio",
+    "desc": "Professional portfolio with modern design, smooth animations and premium visual style."
   }
 },
   "process": {

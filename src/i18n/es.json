@@ -38,18 +38,24 @@
     "popular": "Más elegido"
   },
   "demos": {
-  "title": "Demos",
-  "view": "Ver Demo",
-  "openDemo": "Abrir Sitio",
+  "title": "Demos reales",
+  "view": "Ver demo",
+  "live": "Abrir demo",
+  "source": "Solicitar similar",
 
-  "saas": {
+  "landing": {
     "title": "SaaS Landing Page",
-    "desc": "Landing premium estilo startup/SaaS con diseño moderno, animaciones y enfoque en conversión."
+    "desc": "Landing moderna enfocada en conversión, animaciones premium y experiencia tipo startup."
   },
 
-  "localbusiness": {
+  "localBusiness": {
     "title": "Local Business",
-    "desc": "Sitio profesional para negocios locales con diseño moderno, contacto rápido y presencia digital sólida."
+    "desc": "Sitio para negocios locales optimizado para captar clientes y generar confianza."
+  },
+
+  "portfolio": {
+    "title": "Creative Portfolio",
+    "desc": "Portfolio profesional con diseño moderno, animaciones suaves y enfoque visual premium."
   }
 },
   "process": {
