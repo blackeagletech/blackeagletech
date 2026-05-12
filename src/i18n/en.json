@@ -130,5 +130,24 @@
       "discord": "Discord",
       "telegram": "Telegram"
     }
+  },
+  "team": {
+  "badge": "Our team",
+  "title": "Design, development and support focused on results",
+  "subtitle": "We build modern web experiences focused on performance, premium design and digital growth.",
+  "members": {
+    "developer": {
+      "role": "Full Stack Development",
+      "desc": "Modern architecture, premium frontend and scalable solutions for digital businesses."
+    },
+    "design": {
+      "role": "UI/UX Design",
+      "desc": "Clean, intuitive interfaces optimized for conversion and user experience."
+    },
+    "support": {
+      "role": "Support & Optimization",
+      "desc": "Maintenance, continuous improvements and technical optimization for production projects."
+    }
   }
+}
 }

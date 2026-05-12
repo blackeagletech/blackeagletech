@@ -5,7 +5,7 @@
     <ServicesSection />
     <DemoSection />
     <ProcessSection />
-    <BuilderSection />
+    <TeamSection />
     <ContactSection />
 
   </main>
@@ -17,8 +17,7 @@ import ServicesSection from "../components/sections/ServicesSection.vue"
 import DemoSection from "../components/sections/DemoSection.vue"
 import ProcessSection from "../components/sections/ProcessSection.vue"
 import ContactSection from "../components/sections/ContactSection.vue"
-import BuilderSection from "../components/sections/BuilderSection.vue"
-
+import TeamSection from "@/components/sections/TeamSection.vue"
 import { useReveal } from "../composables/useReveal"
 
 useReveal()
