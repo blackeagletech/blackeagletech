@@ -101,15 +101,15 @@ const members = ref([
   },
   {
     role: "design",
-    icon: "design"
+    icon: "designer"
   },
   {
     role: "support",
-    icon: "support"
+    icon: "seo-marketing"
   },
   {
     role: "strategy",
-    icon: "strategy"
+    icon: "marketing"
   }
 ])
 
