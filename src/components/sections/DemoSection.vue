@@ -3,10 +3,22 @@
 
     <div class="demos-container">
 
-      <!-- TITLE -->
-      <h2 class="demos-title">
-        {{ t("demos.title") }}
-      </h2>
+      <!-- HEADER -->
+      <div class="demos-header">
+
+        <span class="demos-badge">
+          {{ t("demos.badge") }}
+        </span>
+
+        <h2 class="demos-title">
+          {{ t("demos.title") }}
+        </h2>
+
+        <p class="demos-subtitle">
+          {{ t("demos.subtitle") }}
+        </p>
+
+      </div>
 
       <!-- GRID -->
       <div class="demos-grid">
@@ -23,20 +35,27 @@
           <!-- IMAGE -->
           <img :src="demo.image" class="demo-img" />
 
-          <!-- GLOW -->
+          <!-- FX -->
           <div class="demo-video"></div>
+
+          <!-- BADGE -->
+          <div class="demo-card-badge">
+            {{ demo.badge }}
+          </div>
 
           <!-- OVERLAY -->
           <div class="demo-overlay">
 
             <div>
-              <h3 class="demo-title">
+
+              <h3 class="demo-title-card">
                 {{ t(`demos.${demo.key}.title`) }}
               </h3>
 
               <p class="demo-desc">
                 {{ t(`demos.${demo.key}.desc`) }}
               </p>
+
             </div>
 
             <button class="demo-btn">
@@ -74,8 +93,8 @@
 
             <div>
 
-              <span class="demo-badge">
-                LIVE DEMO
+              <span class="demo-badge-modal">
+                {{ activeDemo.badge }}
               </span>
 
               <h3>
@@ -97,7 +116,7 @@
                 rel="noopener noreferrer"
                 class="btn"
               >
-                {{ t("demos.openDemo") }}
+                {{ t("demos.live") }}
               </a>
 
               <button

@@ -1,15 +1,15 @@
 export const services = [
   {
     key: "web",
-    icon: "🌐",
-    popular: true
+    icon: "web-development",
+    popular: true,
   },
   {
     key: "ecommerce",
-    icon: "🛒"
+    icon: "ecommerce",
   },
   {
     key: "support",
-    icon: "🛠️"
-  }
+    icon: "technical-support",
+  },
 ]

@@ -6,6 +6,8 @@
     "whatsapp": "WhatsApp"
   },
   "services": {
+    "badge": "Servicios premium",
+    "subtitle": "Desarrollo web moderno, ecommerce y soporte técnico con enfoque en rendimiento, diseño y crecimiento digital.",
     "title": "Servicios",
     "web": {
       "title": "Sitios Web",
@@ -38,10 +40,12 @@
     "popular": "Más elegido"
   },
   "demos": {
-  "title": "Demos reales",
+  "badge": "Live demos",
+  "title": "Demos & proyectos reales",
+  "subtitle": "Sitios demostrativos totalmente funcionales para mostrar diseño, experiencia de usuario y tecnologías aplicadas.",
+
   "view": "Ver demo",
   "live": "Abrir demo",
-  "source": "Solicitar similar",
 
   "landing": {
     "title": "SaaS Landing Page",
@@ -56,6 +60,11 @@
   "portfolio": {
     "title": "Creative Portfolio",
     "desc": "Portfolio profesional con diseño moderno, animaciones suaves y enfoque visual premium."
+  },
+
+  "pulseiq": {
+    "title": "PulseIQ",
+    "desc": "Mini SaaS interactivo con experiencia moderna, métricas visuales y UI premium enfocada en producto digital."
   }
 },
   "process": {
@@ -132,9 +141,16 @@
     }
   },
   "team": {
-  "badge": "Nuestro equipo",
-  "title": "Diseño, desarrollo y soporte enfocados en resultados",
-  "subtitle": "Creamos experiencias web modernas con enfoque en rendimiento, diseño premium y crecimiento digital.",
+  "badge": "Equipo & Workflow",
+  "title": "Creamos experiencias digitales modernas",
+  "subtitle": "Diseño, desarrollo y optimización trabajando juntos para construir sitios rápidos, visualmente premium y enfocados en resultados.",
+"text": "Combinamos diseño moderno, desarrollo escalable y optimización continua para crear experiencias digitales profesionales enfocadas en rendimiento, conversión y crecimiento.",
+
+"points": {
+  "performance": "Sitios rápidos, optimizados y preparados para producción.",
+  "design": "Interfaces modernas con enfoque visual premium y experiencia de usuario.",
+  "optimization": "Arquitectura limpia, escalable y pensada para crecimiento digital."
+},
   "members": {
     "developer": {
       "role": "Desarrollo Full Stack",
@@ -147,7 +163,11 @@
     "support": {
       "role": "Soporte & Optimización",
       "desc": "Mantenimiento, mejoras continuas y optimización técnica para proyectos en producción."
-    }
+    },
+"strategy": {
+  "role": "Estrategia Digital",
+  "desc": "Planificación enfocada en conversión, presencia online y crecimiento para negocios modernos."
+}
   }
 }
 }

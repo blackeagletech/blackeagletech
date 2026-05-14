@@ -1,143 +1,436 @@
-/* ===== SECTION ===== */
+/* =========================================
+   SERVICES SECTION — PREMIUM SAAS FINAL
+========================================= */
+
 .services-section {
-  padding: 80px 20px;
-  text-align: center;
+    position: relative;
+    padding: 120px 20px;
+    overflow: hidden;
 }
 
-/* TITLE */
+.services-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* =========================================
+   HEADING
+========================================= */
+
+.services-heading {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.services-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 18px;
+    border-radius: 999px;
+
+    background: rgba(0, 255, 224, 0.06);
+    border: 1px solid rgba(0, 255, 224, 0.18);
+
+    color: var(--primary);
+
+    font-size: 13px;
+    font-weight: 600;
+
+    backdrop-filter: blur(12px);
+
+    margin-bottom: 24px;
+}
+
+/* LIGHT MODE */
+[data-theme="light"] .services-badge {
+    background: rgba(239, 120, 1, 0.08);
+    border-color: rgba(239, 120, 1, 0.18);
+}
+
 .services-title {
-  font-size: 2rem;
-  color: var(--primary);
-  margin-bottom: 50px;
+    font-size: clamp(42px, 8vw, 72px);
+    line-height: 1;
+    letter-spacing: -2px;
+    margin-bottom: 24px;
+    font-weight: 700;
 }
 
-/* GRID */
+.services-subtitle {
+    max-width: 760px;
+    margin: 0 auto;
+
+    color: var(--text-muted);
+
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* =========================================
+   GRID
+========================================= */
+
 .services-grid {
-  display: grid;
-  gap: 24px;
+    display: grid;
+    gap: 28px;
+
+    margin-top: 80px;
 }
 
-/* CARD */
+/* =========================================
+   CARD
+========================================= */
+
 .service-card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  padding: 28px;
-  border-radius: 18px;
-  text-align: left;
-  transition: all 0.35s ease;
-  position: relative;
-  overflow: hidden;
+    position: relative;
 
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+
+    padding: 34px;
+
+    border-radius: 28px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.03),
+            rgba(255, 255, 255, 0.015)
+        );
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    overflow: hidden;
+
+    backdrop-filter: blur(18px);
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
 }
 
-/* 🔥 FIX CLICK (CLAVE) */
+/* GLOW */
 .service-card::before {
-  pointer-events: none; /* esto arregla el botón */
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(0, 255, 224, 0.12),
+            transparent 70%
+        );
+
+    opacity: 0;
+
+    transition: opacity 0.4s ease;
+
+    pointer-events: none;
 }
 
-/* HOVER GLOW DARK */
-:not([data-theme="light"]) .service-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at top, rgba(0, 255, 224, 0.12), transparent 70%);
-  opacity: 0;
-  transition: 0.4s;
-}
-
-/* HOVER GLOW LIGHT */
 [data-theme="light"] .service-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at top, rgba(239,120,1,0.12), transparent 70%);
-  opacity: 0;
-  transition: 0.4s;
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(239, 120, 1, 0.12),
+            transparent 70%
+        );
 }
 
 .service-card:hover::before {
-  opacity: 1;
+    opacity: 1;
 }
 
-/* HOVER */
 .service-card:hover {
-  transform: translateY(-10px) scale(1.02);
-  border-color: var(--primary);
+    transform: translateY(-10px);
+
+    border-color: rgba(0, 255, 224, 0.25);
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.45),
+        0 0 30px rgba(0, 255, 224, 0.08);
 }
 
-/* ICON */
+[data-theme="light"] .service-card:hover {
+    border-color: rgba(239, 120, 1, 0.25);
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.08),
+        0 0 30px rgba(239, 120, 1, 0.08);
+}
+
+/* =========================================
+   BADGE CARD
+========================================= */
+
+.service-badge-card {
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
+    padding: 8px 12px;
+
+    border-radius: 999px;
+
+    background: var(--primary);
+
+    color: black;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    z-index: 5;
+}
+
+/* =========================================
+   ICON WRAP
+========================================= */
+
+.service-icon-wrap {
+    width: 96px;
+    height: 96px;
+
+    border-radius: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.03);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    margin-bottom: 28px;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.service-icon-wrap::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0, 255, 224, 0.12),
+            transparent 70%
+        );
+
+    opacity: 0.8;
+}
+
+[data-theme="light"] .service-icon-wrap::before {
+    background:
+        radial-gradient(
+            circle,
+            rgba(239, 120, 1, 0.12),
+            transparent 70%
+        );
+}
+
+/* =========================================
+   ICON IMAGE
+========================================= */
+
 .service-icon {
-  font-size: 2rem;
-  margin-bottom: 15px;
+    width: 72px;
+    height: 72px;
+
+    object-fit: contain;
+    object-position: center;
+
+    position: relative;
+    z-index: 2;
+
+    transition:
+        transform 0.4s ease,
+        filter 0.4s ease;
 }
 
-/* TEXT */
+.service-card:hover .service-icon {
+    transform: scale(1.08);
+
+    filter:
+        drop-shadow(0 0 18px rgba(0, 255, 224, 0.45));
+}
+
+[data-theme="light"] .service-card:hover .service-icon {
+    filter:
+        drop-shadow(0 0 18px rgba(239, 120, 1, 0.35));
+}
+
+/* =========================================
+   TEXT
+========================================= */
+
 .service-card h3 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
+    font-size: 28px;
+    line-height: 1.2;
+
+    margin-bottom: 18px;
+
+    font-weight: 600;
+
+    letter-spacing: -0.5px;
 }
 
 .service-card p {
-  color: var(--text-muted);
-  margin-bottom: 15px;
+    color: var(--text-muted);
+
+    font-size: 16px;
+    line-height: 1.8;
+
+    margin-bottom: 28px;
 }
 
-/* FEATURES */
+/* =========================================
+   FEATURES
+========================================= */
+
 .service-card ul {
-  margin-bottom: 20px;
-  padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    margin-bottom: 34px;
+
+    padding: 0;
+
+    list-style: none;
 }
 
 .service-card li {
-  font-size: 0.9rem;
-  margin-bottom: 6px;
-  color: var(--text-cards);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--text-cards);
+
+    font-size: 15px;
 }
 
-/* 🔥 BOTÓN FIX */
+/* =========================================
+   BUTTON
+========================================= */
+
 .service-btn {
-  display: inline-flex; /* evita ancho completo */
-  align-self: flex-start; /* lo alinea a la izquierda */
-  margin-top: auto;
-  width: auto !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    align-self: flex-start;
+
+    margin-top: auto;
+
+    padding: 14px 24px;
+
+    border-radius: 14px;
+
+    font-weight: 600;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
-/* MICROINTERACTION */
 .service-btn:hover {
-  transform: scale(1.05);
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 255, 224, 0.22);
 }
 
-/* BADGE */
-.service-badge {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  background: var(--primary);
-  color: black;
-  font-size: 11px;
-  padding: 5px 8px;
-  border-radius: 6px;
-  font-weight: 600;
+[data-theme="light"] .service-btn:hover {
+    box-shadow:
+        0 10px 25px rgba(239, 120, 1, 0.2);
 }
 
-/* ===== ANIMACIONES SAAS ===== */
+/* =========================================
+   REVEAL
+========================================= */
 
 .reveal-item {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s ease;
+    opacity: 0;
+    transform: translateY(40px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
 }
 
 .reveal-item.active {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
-/* ===== DESKTOP ===== */
+/* =========================================
+   TABLET
+========================================= */
+
 @media (min-width: 768px) {
-  .services-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* =========================================
+   DESKTOP
+========================================= */
+
+@media (min-width: 1200px) {
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 640px) {
+    .services-section {
+        padding: 90px 20px;
+    }
+
+    .services-title {
+        font-size: 48px;
+    }
+
+    .services-subtitle {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .services-grid {
+        margin-top: 56px;
+    }
+
+    .service-card {
+        padding: 28px;
+    }
+
+    .service-card h3 {
+        font-size: 24px;
+    }
+
+    .service-icon-wrap {
+        width: 90px;
+        height: 90px;
+    }
+
+    .service-icon {
+        width: 66px;
+        height: 66px;
+    }
 }

@@ -3,8 +3,8 @@
 
     <div class="team-container">
 
-      <!-- HEADER -->
-      <div class="team-header">
+      <!-- LEFT -->
+      <div class="team-content">
 
         <span class="team-badge">
           {{ t("team.badge") }}
@@ -17,21 +17,52 @@
         <p class="team-subtitle">
           {{ t("team.subtitle") }}
         </p>
+        <!-- EXTRA TEXT -->
+        <p class="team-text">
+          {{ t("team.text") }}
+        </p>
+
+        <!-- HIGHLIGHTS -->
+        <div class="team-points">
+
+          <div class="team-point">
+            <span>✦</span>
+            <p>{{ t("team.points.performance") }}</p>
+          </div>
+
+          <div class="team-point">
+            <span>✦</span>
+            <p>{{ t("team.points.design") }}</p>
+          </div>
+
+          <div class="team-point">
+            <span>✦</span>
+            <p>{{ t("team.points.optimization") }}</p>
+          </div>
+
+        </div>
 
       </div>
 
-      <!-- GRID -->
+      <!-- RIGHT -->
       <div class="team-grid">
 
         <div
           v-for="member in members"
           :key="member.role"
-          class="team-card"
+          class="team-card reveal-item"
         >
 
-          <!-- AVATAR -->
-          <div class="team-avatar">
-            {{ member.icon }}
+          <!-- ICON -->
+          <div class="team-icon-wrap">
+
+            <!-- 👇 CAMBIAR NOMBRE DEL ICONO -->
+            <img
+              :src="getIcon(member.icon)"
+              :alt="member.role"
+              class="team-icon"
+            />
+
           </div>
 
           <!-- ROLE -->
@@ -54,23 +85,87 @@
 </template>
 
 <script setup>
-import { ref } from "vue"
+import { ref, onMounted } from "vue"
 import { useI18n } from "vue-i18n"
 
 const { t } = useI18n()
 
+/* =========================================
+   TEAM MEMBERS
+========================================= */
+
 const members = ref([
   {
     role: "developer",
-    icon: "💻"
+    icon: "developer"
   },
   {
     role: "design",
-    icon: "🎨"
+    icon: "design"
   },
   {
     role: "support",
-    icon: "⚡"
+    icon: "support"
+  },
+  {
+    role: "strategy",
+    icon: "strategy"
   }
 ])
+
+/* =========================================
+   THEME ICONS
+========================================= */
+
+const currentTheme = ref(
+  document.documentElement.getAttribute("data-theme") || "dark"
+)
+
+const getIcon = (icon) => {
+  return `/icons/${currentTheme.value}/${icon}.webp`
+}
+
+/* =========================================
+   OBSERVER THEME
+========================================= */
+
+onMounted(() => {
+
+  const observerTheme = new MutationObserver(() => {
+    currentTheme.value =
+      document.documentElement.getAttribute("data-theme") || "dark"
+  })
+
+  observerTheme.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ["data-theme"]
+  })
+
+})
+
+/* =========================================
+   REVEAL
+========================================= */
+
+onMounted(() => {
+
+  const items = document.querySelectorAll(".reveal-item")
+
+  const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active")
+      }
+
+    })
+
+  }, {
+    threshold: 0.15
+  })
+
+  items.forEach(item => observer.observe(item))
+
+})
 </script>

@@ -6,6 +6,8 @@
     "whatsapp": "WhatsApp Chat"
   },
   "services": {
+    "badge": "Premium services",
+    "subtitle": "Modern web development, ecommerce and technical support focused on performance, design and digital growth.",
     "title": "Services",
     "web": {
       "title": "Web Development",
@@ -38,10 +40,12 @@
     "popular": "Top pick"
   },
   "demos": {
-  "title": "Real demos",
+  "badge": "Live demos",
+  "title": "Demos & real projects",
+  "subtitle": "Fully functional showcase websites built to demonstrate design quality, UX and applied technologies.",
+
   "view": "View demo",
   "live": "Open demo",
-  "source": "Request similar",
 
   "landing": {
     "title": "SaaS Landing Page",
@@ -56,6 +60,11 @@
   "portfolio": {
     "title": "Creative Portfolio",
     "desc": "Professional portfolio with modern design, smooth animations and premium visual style."
+  },
+
+  "pulseiq": {
+    "title": "PulseIQ",
+    "desc": "Interactive mini SaaS with modern UX, visual metrics and premium product-oriented interface."
   }
 },
   "process": {
@@ -132,9 +141,16 @@
     }
   },
   "team": {
-  "badge": "Our team",
-  "title": "Design, development and support focused on results",
-  "subtitle": "We build modern web experiences focused on performance, premium design and digital growth.",
+  "badge": "Team & Workflow",
+  "title": "We build modern digital experiences",
+  "subtitle": "Design, development and optimization working together to create fast, premium and conversion-focused websites.",
+"text": "We combine modern design, scalable development and continuous optimization to build professional digital experiences focused on performance, conversion and growth.",
+
+"points": {
+  "performance": "Fast, optimized and production-ready websites.",
+  "design": "Modern interfaces focused on premium visuals and user experience.",
+  "optimization": "Clean and scalable architecture designed for digital growth."
+},
   "members": {
     "developer": {
       "role": "Full Stack Development",
@@ -147,7 +163,11 @@
     "support": {
       "role": "Support & Optimization",
       "desc": "Maintenance, continuous improvements and technical optimization for production projects."
-    }
+    },
+"strategy": {
+  "role": "Digital Strategy",
+  "desc": "Planning focused on conversion, online presence and growth for modern businesses."
+}
   }
 }
 }
