@@ -65,7 +65,11 @@
   "pulseiq": {
     "title": "PulseIQ",
     "desc": "Interactive mini SaaS with modern UX, visual metrics and premium product-oriented interface."
-  }
+  },
+  "booking": {
+  "title": "Booking System Demo",
+  "desc": "Modern online booking system with premium UI, appointment management and a conversion-focused experience."
+}
 },
   "process": {
   "title": "Workflow",

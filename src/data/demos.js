@@ -25,5 +25,11 @@ export const demos = [
     image: "/demos/mini-saas.png",
     url: "https://black-eagle-tech.github.io/pulseiq/",
     badge: "Interactive SaaS"
+  },
+  {
+    key: "booking",
+    image: "/demos/booking-system.png",
+    url: "https://black-eagle-tech.github.io/booking-system-demo/",
+    badge: "Booking System"
   }
 ]
